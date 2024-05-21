@@ -4,10 +4,8 @@ response = str(input("Do you want to embed the fake link? (y/n): ")).rstrip()
 
 embed = True if response == "y" else False
 
-fake_url_cut = fake_url[1:]
-
 template = "[h](<{}>)[{}](<{}>)                         [⠀]({})"
 if embed == False:
-    print(template[:20].format(real_url, fake_url_cut, real_url, fake_url))
+    print(template[:20].format(real_url, fake_url[1:], real_url))
 else:
-    print(template.format(real_url, fake_url_cut, real_url, fake_url))
+    print(template.format(real_url, fake_url[1:], real_url, fake_url))
