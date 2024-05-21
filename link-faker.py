@@ -1,6 +1,6 @@
 real_url = str(input("Real link: ")).rstrip()
 fake_url = str(input("Fake link: ")).rstrip()
-response = str(input("Do you want to embed the fake link? (y/n): "))
+response = str(input("Do you want to embed the fake link? (y/n): ")).rstrip()
 
 embed = True if response == "y" else False
 
