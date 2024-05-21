@@ -3,5 +3,5 @@ embed = str(input("Link to embed: ")).rstrip()
 
 embed_cut = embed[1:]
 
-template = "[h](<{}>)[{}](<{}>)                                                                                                                                                                                                                                          [⠀]({})"
+template = "[h](<{}>)[{}](<{}>)                         [⠀]({})"
 print(template.format(url, embed_cut, url, embed))
